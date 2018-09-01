@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 
-const TOKEN = "NDYwNzAyOTA2NTc2OTI4NzY4.Dk2s-A.PNQayLh2FcFFAy4_ZVV60tiQ0RA"
 const PREFIX = "ves!";
 var bot = new Discord.Client();
 
@@ -125,4 +124,4 @@ bot.on("message", function(message){
     
     }
 });
-bot.login(TOKEN);
+bot.login(process.env.token);
